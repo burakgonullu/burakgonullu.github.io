@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %}
+
+{% block content %}
+<h3 style="font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight:900 ; color: #ededed;">A&G Management System</h3>
+<br  />
+<form method="POST">
+    <h3 align="center"></h3>
+    <div class="form-group">
+        <label for="email" style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight:900 ; color: #ededed;">Email</label>
+        <input type="email" class="form-control" id="email" name="email" style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight:900;"/>
+    </div>
+    <br  />
+    <div class="form-group">
+        <label for="password" style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight:900 ; color: #ededed;">Password</label>
+        <input type="text" class="form-control" id="password" name="password" style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight:900 ;"/>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="button" class="btn btn-primary"><a class="nav-item nav-link" id="login" href="/sign-up">Sign Up</a></button>
+</form>
+{% endblock %}
